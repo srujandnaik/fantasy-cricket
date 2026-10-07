@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupSelections">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>800</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Your Selections</string>
+    </property>
+    <widget class="QLabel" name="labelBatsmen">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Batsmen (0)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelBowlers">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bowlers (0)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelAllRounders">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>All-rounders (0)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelWicketKeeper">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>30</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Wicket-keeper (0)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelPointsAvailable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Points Available: 1000</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labellabelPointsUsed">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>70</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Points Used: 0</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioBAT">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BAT</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioBOWL">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BOWL</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioAR">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>100</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AR</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioWK">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>100</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>WK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelAvailablePlayers">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Available Players</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listAvailablePlayers">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>231</width>
+       <height>192</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSelectedPlayers">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>140</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Selected Players</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listSelectedPlayers">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>170</y>
+       <width>231</width>
+       <height>192</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAddPlayer">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>210</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add →</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnRemovePlayer">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>270</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>← Remove</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineTeamName">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>380</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Enter team name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTeamName">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>380</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Team Name</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSaveTeam">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>410</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save Team</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnClearTeam">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>410</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear Team</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEvaluateTeam">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>410</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Evaluate Team</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_Teams">
+    <property name="title">
+     <string>Manage Teams</string>
+    </property>
+    <addaction name="actionNew_Team"/>
+    <addaction name="actionOpen_team"/>
+    <addaction name="actionSave_Team"/>
+    <addaction name="actionEvaluate_Team"/>
+   </widget>
+   <addaction name="menuManage_Teams"/>
+  </widget>
+  <action name="actionNew_Team">
+   <property name="text">
+    <string>New Team</string>
+   </property>
+  </action>
+  <action name="actionOpen_team">
+   <property name="text">
+    <string>Open team</string>
+   </property>
+  </action>
+  <action name="actionSave_Team">
+   <property name="text">
+    <string>Save Team</string>
+   </property>
+  </action>
+  <action name="actionEvaluate_Team">
+   <property name="text">
+    <string>Evaluate Score</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
